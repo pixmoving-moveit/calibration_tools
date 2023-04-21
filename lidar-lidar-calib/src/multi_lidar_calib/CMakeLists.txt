@@ -35,6 +35,11 @@ target_include_directories(${PROJECT_NAME} PUBLIC
   ${EIGEN3_INCLUDE_DIR}
 )
 
+find_package(pcl_conversions REQUIRED)
+target_include_directories(${PROJECT_NAME} PUBLIC
+  ${pcl_conversions_INCLUDE_DIRS}
+)
+
 install(TARGETS
   ${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME})
