@@ -1,3 +1,0 @@
-numpy
-matplotlib
-opencv-contrib-python>=4.0.0
